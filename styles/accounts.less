@@ -1,7 +1,7 @@
 @import "variables";
 @import "ui-variables";
 
-.websockets
+.accounts
 {
     background: @pane-background-color;
     display: flex;
@@ -20,48 +20,48 @@
             font-size: 11px;
             color: @text-color-subtle;
             padding: 0 10px;
+            text-align: right;
 
-            &:last-child
+            &:first-child
             {
-                border-right: 0;
-            }
-
-            &.uri
-            {
-                flex: 3;
+                text-align: left;
             }
         }
     }
 
-    .websockets-list
+    .accounts-list
     {
         flex: 1;
         overflow: auto;
     }
 
-    .via-table
+    .tr
     {
-        .tr
+        display: flex;
+        height: 25px;
+        border-bottom: 1px solid fade(@header-border-color, 50%);
+
+        .td
         {
-            display: flex;
-            height: 25px;
-            border-bottom: 1px solid fade(@header-border-color, 50%);
+            flex: 1;
+            font-size: 11px;
+            padding: 0 10px;
+            line-height: 24px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: right;
 
-            .td
+            &:first-child
             {
-                flex: 1;
-                font-size: 11px;
-                padding: 0 10px;
-                line-height: 24px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-
-                &.uri
-                {
-                    flex: 3;
-                }
+                text-align: left;
             }
+        }
+
+        &.empty
+        {
+            color: @text-color-subtle;
+            font-style: italic;
         }
     }
 }

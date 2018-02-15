@@ -1,24 +1,30 @@
 {
-  "name": "websockets",
-  "version": "0.1.1",
-  "description": "Monitor open websocket connections.",
-  "main": "./lib/main",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "via",
-    "websockets"
-  ],
-  "repository": "https://github.com/via-platform/websockets",
-  "author": "Dakota Gordon",
-  "engines": {
-    "via": "*"
-  },
-  "dependencies": {
-    "etch": "0.9.0",
-    "moment": "^2.20.1",
-    "via-table": "0.0.3"
-  },
-  "providedServices": {}
+    "name": "accounts",
+    "version": "0.0.0",
+    "description": "View all available accounts and positions.",
+    "main": "./lib/main",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "via",
+        "accounts"
+    ],
+    "repository": "https://github.com/via-platform/accounts",
+    "author": "Dakota Gordon",
+    "engines": {
+        "via": "*"
+    },
+    "dependencies": {
+        "etch": "0.9.0",
+        "via-table": "0.0.3"
+    },
+    "providedServices": {},
+    "configSchema": {
+        "hideZeroValues": {
+            "type": "boolean",
+            "default": false,
+            "description": "Hide all assets with a zero balance."
+        }
+    }
 }
