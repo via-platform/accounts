@@ -1,0 +1,4 @@
+'context-menu':
+  '.accounts .accounts-list': [
+    {label: 'Refresh All Positions', command: 'accounts:update-positions'}
+  ]
