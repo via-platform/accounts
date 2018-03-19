@@ -29,10 +29,17 @@
         }
     }
 
-    .accounts-list
+    .via-table
     {
-        flex: 1;
-        overflow: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .tbody
+        {
+            flex: 1;
+            overflow: auto;
+        }
     }
 
     .tr
@@ -56,12 +63,12 @@
             {
                 text-align: left;
             }
-        }
 
-        &.empty
-        {
-            color: @text-color-subtle;
-            font-style: italic;
+            &.account
+            {
+                color: @text-color;
+                -webkit-font-smoothing: auto;
+            }
         }
     }
 }
