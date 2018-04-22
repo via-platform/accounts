@@ -1,31 +1,34 @@
 {
-  "name": "accounts",
-  "version": "0.2.1",
-  "description": "View all available accounts and positions.",
-  "main": "./lib/main",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "via",
-    "accounts"
-  ],
-  "repository": "https://github.com/via-platform/accounts",
-  "author": "Dakota Gordon",
-  "engines": {
-    "via": "*"
-  },
-  "dependencies": {
-    "etch": "0.9.0",
-    "underscore-plus": "^1.0.0",
-    "via-table": "^0.2.0"
-  },
-  "providedServices": {},
-  "configSchema": {
-    "hideZeroValues": {
-      "type": "boolean",
-      "default": false,
-      "description": "Hide all assets with a zero balance."
+    "name": "accounts",
+    "version": "0.2.1",
+    "description": "View all available accounts and positions.",
+    "main": "./lib/main",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "via",
+        "accounts"
+    ],
+    "repository": "https://github.com/via-platform/accounts",
+    "author": "Dakota Gordon",
+    "engines": {
+        "via": "*"
+    },
+    "dependencies": {
+        "etch": "0.9.0",
+        "underscore-plus": "^1.0.0",
+        "via-table": "^0.2.0"
+    },
+    "deserializers": {
+        "Accounts": "getAccountsInstance"
+    },
+    "providedServices": {},
+    "configSchema": {
+        "hideZeroValues": {
+            "type": "boolean",
+            "default": false,
+            "description": "Hide all assets with a zero balance."
+        }
     }
-  }
 }
