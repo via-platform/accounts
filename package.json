@@ -13,7 +13,7 @@
   "repository": "https://github.com/via-platform/accounts",
   "author": "Dakota Gordon",
   "engines": {
-    "via": ">=0.9.0-alpha"
+    "via": ">=0.8.0-alpha"
   },
   "dependencies": {
     "etch": "0.9.0",
