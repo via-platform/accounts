@@ -1,6 +1,6 @@
 {
   "name": "accounts",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "View all available accounts and positions.",
   "main": "./lib/main",
   "scripts": {
