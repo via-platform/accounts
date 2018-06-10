@@ -1,3 +1,15 @@
+'menu': [
+  {
+    'label': 'View'
+    'submenu': [
+      'label': 'Components'
+      'submenu': [
+        { 'label': 'Accounts', 'command': 'accounts:show' }
+      ]
+    ]
+  }
+]
+
 'context-menu':
   '.accounts .accounts-list': [
     {label: 'Refresh All Positions', command: 'accounts:update-positions'}
