@@ -1,5 +1,5 @@
 {
-  "name": "accounts",
+  "name": "positions",
   "version": "0.3.7",
   "description": "View all available accounts and positions.",
   "main": "./lib/main",
@@ -8,9 +8,9 @@
   },
   "keywords": [
     "via",
-    "accounts"
+    "positions"
   ],
-  "repository": "https://github.com/via-platform/accounts",
+  "repository": "https://github.com/via-platform/positions",
   "author": "Dakota Gordon",
   "engines": {
     "via": ">=0.8.0-alpha"
@@ -21,8 +21,15 @@
     "via-table": "^0.2.4"
   },
   "deserializers": {
-    "Accounts": "getAccountsInstance"
+    "Positions": "deserialize"
   },
+  "consumedServices": {
+    "action-bar": {
+      "versions": {
+        "^0.1.0": "consumeActionBar"
+      }
+    }
+},
   "providedServices": {},
   "configSchema": {}
 }
