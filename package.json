@@ -1,6 +1,6 @@
 {
   "name": "positions",
-  "version": "0.3.7",
+  "version": "0.4.0",
   "description": "View all available accounts and positions.",
   "main": "./lib/main",
   "scripts": {
@@ -29,7 +29,7 @@
         "^0.1.0": "consumeActionBar"
       }
     }
-},
+  },
   "providedServices": {},
   "configSchema": {}
 }
